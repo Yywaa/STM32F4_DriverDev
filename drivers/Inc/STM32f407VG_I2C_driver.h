@@ -112,7 +112,7 @@ void I2C_PeriClockCtrl(I2C_RegDef_t *pI2Cx, uint8_t EnorDi);
  * Peripheral Init and Deinit
  */
 void I2C_Init(I2C_Handle_t *pI2CHandle);
-void I2C_DeInit(I2C_Handle_t *pI2Cx);
+void I2C_DeInit(I2C_Handle_t *pI2CHandle);
 
 /*
  * Data send or receive-this is blocking based- non interrupt

@@ -255,7 +255,22 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
  *
  * @note             - none
  */
-void I2C_DeInit(I2C_Handle_t *pI2Cx);
+void I2C_DeInit(I2C_Handle_t *pI2CHandle)
+{
+	if(pI2CHandle->pI2Cx == I2C1)
+	{
+		I2C1_REG_RESET();
+	}
+	if(pI2CHandle->pI2Cx == I2C2)
+	{
+		I2C2_REG_RESET();
+	}
+	if(pI2CHandle->pI2Cx == I2C3)
+	{
+		I2C3_REG_RESET();
+	}
+
+}
 
 
 

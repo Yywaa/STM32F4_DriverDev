@@ -1,5 +1,6 @@
 #directory
-**.setting
+*.settings/
 
 #filename
 GitReadMe.txt
+Debug
